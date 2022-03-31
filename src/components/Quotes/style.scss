@@ -1,0 +1,46 @@
+.home{
+    margin-top: 2em ;
+    background-image: url(https://res.cloudinary.com/dtnoanxmt/image/upload/c_crop,h_1286,q_49,w_6000/v1643380346/malte-michels-s4wGZw3UuLk-unsplash_mythcg.jpg);
+    height: 25vh;
+    color: white;
+    font-weight: Bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about{
+        margin-top: 2em ;
+        background-image: url(https://res.cloudinary.com/dtnoanxmt/image/upload/c_crop,h_1286,q_49,w_6000/v1643380346/malte-michels-s4wGZw3UuLk-unsplash_mythcg.jpg);
+        height: 25vh;
+        color: white;
+        font-weight: Bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 3rem;
+}
+.contain{
+        width: 40%;
+        font-size: 2em;
+        text-align: center; }
+.author {
+            font-size: 1em;
+        }    
+
+@media screen and (max-width: 600px) {
+        .about, .home, .contain {
+                width: unset;
+        }
+}

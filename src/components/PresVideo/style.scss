@@ -1,0 +1,17 @@
+@use '../../styles/vars.scss';
+
+.pres-video{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: vars.$color-1;
+}
+
+.player-video {
+    max-width: 100vw;
+}

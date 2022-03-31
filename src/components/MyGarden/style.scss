@@ -1,0 +1,105 @@
+@use '../../styles/vars.scss';
+
+.myGarden {
+    padding-top: 140px;
+    min-height: 80vh;
+
+        &-title {
+            color: vars.$color-1;
+            margin-left: 3rem;
+        }
+    
+        &-top {
+            display: flex;
+        }
+
+        &-search {
+            width: 220px;
+            background-color: vars.$color-3;
+            border-radius: 5px;
+            padding: 12px;
+            margin-left: 3rem;
+            margin-right: 2rem;
+            display: flex;
+    
+            &-input {
+                border: none;
+                background-color: vars.$color-3;
+                outline: none;
+                color: vars.$color-1;
+                width: 100%;
+            }
+    
+            input[type="search"]::-webkit-search-cancel-button {
+                /* Remove default */
+                -webkit-appearance: none;
+            }
+    
+            &-icon {
+                color: vars.$color-1;
+            }
+        }
+
+        &-add-plant {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            background-color: vars.$color-3;
+            color: vars.$color-1;
+            border-radius: 5px;
+            padding: 12px;
+            margin-right: 3rem;
+            font-weight: bold;
+            transition: 0.2s ease-in-out;
+            
+            &:hover {
+                cursor: pointer;
+                background-color: vars.$color-2;
+                color: vars.$color-4;
+            }
+        }
+
+        &-plants {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            min-height: 70vh;
+            align-items: center;
+        }
+
+        &-empty {
+            color: vars.$color-1;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+}
+
+@media screen and (max-width: 830px) {
+    .myGarden {
+        padding-top: 130px;
+        
+        &-title {
+            margin-left: 0;
+            text-align: center;
+        }
+        
+        &-top {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-search {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &-add-plant {
+            margin-top: 2rem;
+            margin-left: 0;
+            width: 220px;
+            display: flex;
+            justify-content: center;
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@use '../../styles/vars.scss';
+
+.subscribe-form {
+    display: flex;
+    width: 20vw;
+
+    &-element {
+        width: 100%;
+    }
+
+    &-button {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: vars.$color-1;
+        padding: 0.8rem;
+        width: 100%;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        box-shadow: 1px 5px 19px 4px rgb(0 0 0 / 20%)    }
+
+    &-button:hover {
+        background-color: vars.$color-3;
+        color: vars.$color-1;
+    }
+
+    &-error-message {
+        color: red;
+        font-weight: bold;
+        margin-top: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .subscribe-form {
+        width: unset;
+        padding: 48px;
+    }
+  }

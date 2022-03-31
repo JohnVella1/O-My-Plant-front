@@ -1,0 +1,33 @@
+@use '../../styles/vars.scss';
+.bdd-plant-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    &-description{
+        display: flex;
+        flex-direction: column;
+    }
+    &-image-container {
+        width:100%;
+        height: 200px;
+        margin: 0 auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }        
+}
+
+label {
+    color: vars.$color-1;
+    font-weight: bold;
+}   
+
+.plant-input-field, .plant-file-input {
+    font-weight: 500;
+}
+
+.profile-biography-content {
+    color: vars.$color-1;
+}

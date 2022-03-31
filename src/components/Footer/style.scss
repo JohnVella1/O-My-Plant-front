@@ -1,0 +1,76 @@
+@use '../../styles/vars.scss';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+    background-color: vars.$color-1;
+    color: #ffffff;
+    margin-top: 2rem;
+
+    &-left-part{
+        max-width: 20%;
+        & img {
+            width: 45%;
+        }
+    }
+    &-middle-part{
+        & h1{
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 3rem auto;
+        }
+        & ul {
+            padding: inherit;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            & a{
+                text-decoration: none;
+                border-bottom: 2px solid rgba(255, 255, 255, 0);
+                
+                li{
+                    color: white;
+                    margin-top: 1rem;
+                    border-bottom: 2px solid transparent;
+                    display: inline-block;
+                    transition: 0.2s ease-in-out;
+
+                                        &:hover{
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+        }
+    }
+    &-right-part{
+        
+        & p{
+            margin-top: 2rem;
+        }
+
+        & a{
+            text-decoration: none;
+            color: white;
+            transition: 0.2s ease-in-out;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: block;
+        text-align: center;
+
+        &-left-part {
+            max-width: none;
+        }
+    }
+  }

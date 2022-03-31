@@ -1,0 +1,11 @@
+@use '../../styles/vars.scss';
+
+.privacy-policy{
+    padding: 10rem;
+    color: vars.$color-1;
+}
+@media screen and (max-width : 750px) {
+    .privacy-policy{
+        padding: 6rem 1rem;
+    }
+}

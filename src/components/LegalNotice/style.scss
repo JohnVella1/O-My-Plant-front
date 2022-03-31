@@ -1,0 +1,11 @@
+@use '../../styles/vars.scss';
+
+.legal-notice{
+    padding: 10rem;
+    color: vars.$color-1;
+}
+@media screen and (max-width : 750px) {
+    .legal-notice{
+        padding: 6rem 1rem;
+    }
+}

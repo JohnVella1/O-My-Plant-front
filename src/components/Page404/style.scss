@@ -1,0 +1,22 @@
+
+@use '../../styles/vars.scss';
+
+.page-404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 1.5rem;
+    color: vars.$color-2;
+    &-img {
+        width: 55%;
+    }
+
+}
+@media screen and (max-width : 900px) {
+    .page-404-h1{
+        font-size: 1.5rem;
+    }
+}

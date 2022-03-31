@@ -1,0 +1,118 @@
+@use '../../styles/vars.scss';
+
+.user-plant-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: vars.$color-1;
+
+    input {
+        border: none;
+        font-weight:unset;
+    }
+
+    .label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    
+    button{
+        width: 30%;
+    }
+
+    .button-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    select{
+        padding: 0.4rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        color: vars.$color-1;
+        background-color: vars.$color-3;
+        font-weight: 500;
+        outline: none;
+        border: none;
+    }
+}
+
+.form-description-part{
+    flex: 1;
+    text-align: center;
+
+    & img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover ;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+}
+
+.form-care-part{
+    flex: 1;
+    padding: 0rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & label {
+            margin-top: 0.8rem;
+            display: flex;
+            flex-direction: column;
+        }
+    & fieldset {
+        background-color: transparent;
+    }
+}
+
+.form-container {
+    display: flex;
+}
+
+.form-care-watering {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem ;
+    border: none;
+    background-color: vars.$color-4;
+    & label {
+        margin-top: 1rem;
+    }
+    & legend {
+        font-weight: bold;
+    }
+    
+}
+
+.button-container {
+    display: flex;
+}
+
+@media screen and (max-width: 830px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .user-plant-form button {
+        width: 100%;
+    }
+
+    .form-care-part {
+        padding: 0;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .form-description-part {
+        input {
+            width: 80%;
+        }
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+}
